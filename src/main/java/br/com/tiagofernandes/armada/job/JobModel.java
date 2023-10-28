@@ -1,4 +1,4 @@
-package br.com.tiagofernandes.armada.office;
+package br.com.tiagofernandes.armada.job;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -12,7 +12,7 @@ import lombok.Data;
 
 @Data
 @Entity(name = "tb_offices")
-public class OfficeModel {
+public class JobModel {
   @Id
   @GeneratedValue
   private UUID id;

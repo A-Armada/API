@@ -5,7 +5,7 @@ import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
 
-import br.com.tiagofernandes.armada.office.OfficeModel;
+import br.com.tiagofernandes.armada.job.JobModel;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -35,8 +35,8 @@ public class UserModel {
   private String zipCode;
 
   @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "officemodel_id")
-  private OfficeModel office;
+  @JoinColumn(name = "jobmodel_id")
+  private JobModel job;
 
   @CreationTimestamp
   private LocalDateTime createdAt;
