@@ -34,9 +34,7 @@ public class UserModel {
   private String state;
   private String zipCode;
 
-  @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "jobmodel_id")
-  private JobModel job;
+  private String job;
 
   @CreationTimestamp
   private LocalDateTime createdAt;
