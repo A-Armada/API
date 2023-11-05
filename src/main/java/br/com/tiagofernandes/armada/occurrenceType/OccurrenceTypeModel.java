@@ -1,4 +1,4 @@
-package br.com.tiagofernandes.armada.job;
+package br.com.tiagofernandes.armada.occurrenceType;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -11,8 +11,8 @@ import jakarta.persistence.Id;
 import lombok.Data;
 
 @Data
-@Entity(name = "tb_offices")
-public class JobModel {
+@Entity(name = "tb_occurrenceTypes")
+public class OccurrenceTypeModel {
   @Id
   @GeneratedValue(generator = "UUID")
   private UUID id;

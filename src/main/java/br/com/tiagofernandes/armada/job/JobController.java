@@ -25,7 +25,7 @@ public class JobController {
     return ResponseEntity.status(HttpStatus.CREATED).body(jobCreated);
   }
 
-  @GetMapping("/")
+  @GetMapping
   public ResponseEntity<List<JobModel>> list() {
     var jobs = this.jobRepository.findAll();
 
