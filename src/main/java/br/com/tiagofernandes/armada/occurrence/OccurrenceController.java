@@ -27,7 +27,7 @@ public class OccurrenceController {
 
   @GetMapping("/last")
   public ResponseEntity<OccurrenceModel> last() {
-    var lastOccurrence = this.occurrenceRepository.findAllByOrderByIdDesc().get(0);
+    var lastOccurrence = this.occurrenceRepository.findAllByOrderByCreatedAtDesc().get(0);
 
     return ResponseEntity.status(HttpStatus.OK).body(lastOccurrence);
   }
